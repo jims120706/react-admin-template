@@ -1,0 +1,27 @@
+.message {
+	width: 37.5%;
+	display: flex;
+	justify-content: center;
+}
+.message-box {
+	display: flex;
+	flex-direction: column;
+	width: 66.7%;
+	justify-content: center;
+	height: 70px;
+	> .row {
+		letter-spacing: 5px;
+	}
+	> .line {
+		height: 2px;
+		background-color: red;
+		margin: 5px auto;
+		width: 85%;
+	}
+}
+.login-out {
+	>.icon{
+		font-size: 36px;
+	}
+	margin-left: 20px;
+}

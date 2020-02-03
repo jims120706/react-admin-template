@@ -2,16 +2,16 @@ import React from 'react';
 import style from './index.module.scss';
 import { Icon } from 'antd';
 
-export default class Header extends React.Component {
+export default class Menu extends React.Component {
 	render() {
 		const menus = [
 			{
 				title: '玩家积分',
-				icon: 'team'
+				icon: 'contacts'
 			},
 			{
 				title: '赔率限额',
-				icon: 'pay-circle'
+				icon: 'dollar'
 			},
 			{
 				title: '收码规则',
@@ -31,7 +31,7 @@ export default class Header extends React.Component {
 			},
 			{
 				title: '流水统计',
-				icon: 'bar-chart'
+				icon: 'pie-chart'
 			},
 			{
 				title: '机器人已开启',
@@ -44,7 +44,7 @@ export default class Header extends React.Component {
 				{menus.map((item, i) => {
 					return (
 						<div key={i} className={style['menu-item']}>
-							<Icon type={item.icon} className={style['icon']} />
+							<Icon type={item.icon} className={style['icon']} theme="twoTone"/>
 							{item.title}
 						</div>
 					);
