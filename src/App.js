@@ -7,7 +7,7 @@ function App() {
 	return (
 		<div className="App">
 			<BaseHeader />
-			Learn React<Layout />
+			<Layout />
 		</div>
 	);
 }
