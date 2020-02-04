@@ -41,11 +41,11 @@ export default class Menu extends React.Component {
 				icon: 'pie-chart',
 				router: 'sum'
 			},
-			{
-				title: '机器人已开启',
-				icon: 'sound',
-				router: 'machine'
-			}
+			// {
+			// 	title: '机器人已开启',
+			// 	icon: 'sound',
+			// 	router: 'machine'
+			// }
 		];
 		return (
 			// 顶部菜单
@@ -58,6 +58,10 @@ export default class Menu extends React.Component {
 						</Link>
 					);
 				})}
+				<div className={style['menu-item']} >
+					<Icon type='sound' className={style['icon']} theme="twoTone"/>
+					机器人已开启
+				</div>
 			</div>
 		);
 	}
